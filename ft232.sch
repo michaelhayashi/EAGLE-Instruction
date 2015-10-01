@@ -6302,6 +6302,7 @@ This is the simplified version of the FT232RL unit. Only what you need, nothing 
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6329,6 +6330,7 @@ This is the simplified version of the FT232RL unit. Only what you need, nothing 
 <instance part="GND3" gate="1" x="55.88" y="91.44"/>
 <instance part="GND4" gate="1" x="22.86" y="91.44"/>
 <instance part="GND5" gate="1" x="76.2" y="91.44"/>
+<instance part="GND6" gate="1" x="17.78" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -6429,6 +6431,12 @@ This is the simplified version of the FT232RL unit. Only what you need, nothing 
 <pinref part="JP2" gate="G$1" pin="3"/>
 <wire x1="99.06" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 <label x="88.9" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="GND"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="15.24" y1="119.38" x2="17.78" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="119.38" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
